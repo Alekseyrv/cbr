@@ -13,7 +13,7 @@ if(isset($_GET['valueID']))
 	$dateFrom = $getFrom[2].'-'.$getFrom[1].'-'.$getFrom[0];
 	$getTo = explode('.', $_GET['to'] );
 	$dateTo = $getTo[2].'-'.$getTo[1].'-'.$getTo[0];
-	$result=mysqli_query($conn,"SELECT * FROM `currency`  WHERE `valuteID`= '$ID' AND (`date` BETWEEN '$dateFrom' AND '$dateTo ')");
+	$result=mysqli_query($conn,"SELECT * FROM `currency`  WHERE `valuteID`= '$ID' AND (`date` BETWEEN '$dateFrom' AND '$dateTo ') ORDER BY `date` DESC");
 ?> 
 
 <div class="mobileTable">
