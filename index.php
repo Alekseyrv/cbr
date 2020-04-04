@@ -6,6 +6,16 @@
 	<title>Document</title>
   <link rel="stylesheet" href="<?php echo $link?>/datepicker.css" type="text/css" media="all" />
   <link rel="stylesheet" href="<?php echo $link?>/css/styles.concated.css" type="text/css" media="all" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148143364-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148143364-2');
+</script>
+
 </head>
 <body>
 <div class="form">
@@ -48,12 +58,11 @@
 				<option value="R01820">Японские иены</option>
   			</select>
 	</div>
-		<input class="inp" id="from" type="text" placeholder="from date" data-multiple-dates-separator=" - "  autocomplete="off">
+		<input class="inp" id="from" type="text" placeholder="select date range" data-multiple-dates-separator=" - "  autocomplete="off">
 		
 	</div>
 	<div class="btn"><a href="javascript:void(0);">показать</a></div>
 </div>
-<link rel="stylesheet" href="http://cf75718.tmweb.ru/datepicker.css" type="text/css" media="all" />
 <?include_once 'api/GetCurr.php';?>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="<?php echo $link?>/datepicker.js"></script>

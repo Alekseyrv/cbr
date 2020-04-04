@@ -95,12 +95,15 @@ $('#to').on('keypress', function(event){
 
 $('.btn').on('click', function (){
     if ( ($('.inp')[0].value == '') || !($("#from").val().length == 23) ) {
-    	alert('заполните все поля');
+      alert('заполните все поля');
     } else {
-    	var curr = $('.select-selected')[0].textContent; 
+      gtag('event', 'clicked', {
+          'event_category': 'clicked'
+      });
+      var curr = $('.select-selected')[0].textContent; 
       var dateFrom = $("#from").val().substring(0, 10);
       var dateTo = $("#from").val().substring($("#from").val().length - 10);
-    	var currValue = $("option:contains('" + curr + "')").val();
-    	location.href = ("http://cf75718.tmweb.ru/api/GetCurr/?valueID="+ currValue+ '&from=' +dateFrom + '&to='+ dateTo);
-	}
-})
+      var currValue = $("option:contains('" + curr + "')").val();
+      location.href = ("http://cf75718.tmweb.ru/api/GetCurr/?valueID="+ currValue+ '&from=' +dateFrom + '&to='+ dateTo);
+  }
+    })
