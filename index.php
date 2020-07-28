@@ -6,16 +6,6 @@
 	<title>Document</title>
   <link rel="stylesheet" href="<?php echo $link?>/datepicker.css" type="text/css" media="all" />
   <link rel="stylesheet" href="<?php echo $link?>/css/styles.concated.css" type="text/css" media="all" />
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148143364-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-148143364-2');
-</script>
-
 </head>
 <body>
 <div class="form">
